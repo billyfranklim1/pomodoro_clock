@@ -1,0 +1,161 @@
+html, body {
+  width: auto;
+  height: auto;
+  min-height: 100%;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100 */
+  background: #151515 !important; 
+  /* background: rgb(255, 255, 255);  */
+  /* Old browsers */
+  /* background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%);  */
+  /* FF3.6-15 */
+  /* background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); */
+   /* Chrome10-25,Safari5.1-6 */
+  /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); */
+   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0); IE6-9 */
+}
+
+.btn:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.title {
+  font-size: 70px;
+  /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Roboto', sans-serif;
+
+  /* height: 150px; */
+  /* width: 250px; */
+  /* min-height: 200px; */
+  /* line-height: 200px; */
+  /* color: #d95550; */
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+.subtitle {
+  font-size: 30px;
+  /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Roboto', sans-serif;
+
+  /* height: 150px; */
+  /* width: 250px; */
+  /* min-height: 200px; */
+  /* line-height: 200px; */
+  /* color: #d95550; */
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.timer{
+  text-align: center;
+
+}
+
+
+.clock-title {
+  font-size: 64px;
+  /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Roboto', sans-serif;
+
+  color: #FFFFFF  !important;
+}
+
+.margin-top {
+  margin-top: 20px ;
+}
+
+.flip-clock-dot {
+  background-color: #DDDDDD !important;
+  color: #DDDDDD !important;
+}
+
+.flip-clock-divider .flip-clock-label {
+  font-size: 16px !important;
+  font-family: 'Roboto', sans-serif;
+  color: #DDDDDD !important
+}
+
+.flip-clock-wrapper ul {
+  background: #FFFFFF;
+}
+
+.flip-clock-wrapper ul li a div.up:after {
+  background-color: #FFFFFF ;
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  color: #151515  !important;
+  text-shadow: 0 1px 1px #555 !important;
+  background-color: #DDDDDD !important;
+}
+
+.session-clock, .break-clock {
+  display: inline-block ;
+  width: auto !important;
+}
+
+.btn-edit {
+  width: 64px;
+  font-size: 36px;
+  color: #151515;
+  background: #DDDDDD;
+  border-style: solid;
+  border-color: #DDDDDD !important;
+}
+
+.margin-right {
+  margin-right: 25px;
+}
+
+.btn-main {
+  width: 225px;
+  font-size: 36px;
+  color: white;
+  background: #151515;
+  border-style: solid;
+  border-color: #FFFFFF !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+  /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Roboto', sans-serif;
+
+  margin: 10px 0;
+}
+
+.btn-main:hover {
+  /* color: white !important;
+  background: #db6e6a; */
+  background-color: #FFFFFF;
+  color: #151515;
+
+}
+
+.btn-main:focus {
+  color: white;
+  outline: none;
+}
+
+.btn-edit:hover{
+  color: #fff !important;
+  background: #151515;
+
+}
+
+.btn-edit:focus{
+  color:white;
+  outline: none;
+}
+
+#credit{
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 10px;
+  /* font-family: 'Covered By Your Grace', cursive; */
+    font-family: 'Roboto', sans-serif;
+
+}

@@ -1,0 +1,68 @@
+
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Pomodoro Clock</title>
+  
+      <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+  
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
+  
+  </head>
+  <body id="body">
+  <div class="container text-center">
+      <div class="row margin-top">
+          <div class="col-md-12 col-xs-12">
+            <h1 class="title">Pomodoro Clock</h1>
+            <p class="subtitle">⏰ seu tempo de trabalho</p>
+          </div>
+      </div>
+      <div class="row timer">
+          <!-- <div class="col-md-5 col-md-offset-1">
+              <div>
+                  <h1 class="clock-title">
+                    Pausa
+                  </h1>
+              </div>
+              <div class="clock break-clock"></div>
+              <div>
+                  <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-break-minute">-</button>
+                  <button type="button" class="btn btn-lg btn-edit margin-right" id="btn-increase-break-minute">+</button>
+                  <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-break-second">-</button>
+                  <button type="button" class="btn btn-lg btn-edit" id="btn-increase-break-second">+</button>
+              </div>
+          </div> -->
+          <div class="col-md-12">
+              <!-- <h1 class="clock-title">
+                Focado  
+              </h1> -->
+              <div class="clock session-clock"></div>
+              <div>
+                  <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-session-minute">-</button>
+                  <button type="button" class="btn btn-lg btn-edit margin-right" id="btn-increase-session-minute">+</button>
+                  <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-session-second">-</button>
+                  <button type="button" class="btn btn-lg btn-edit" id="btn-increase-session-second">+</button>
+              </div>
+          </div>
+      </div>
+      <div class="row margin-top">
+        <div class="col-md-12">
+
+          <button class="btn btn-lg btn-main" id="btn-start">Começar</button>
+          <!-- <button class="btn btn-lg btn-main" id="btn-stop-music">Stop Music</button> -->
+          <button class="btn btn-lg btn-main" id="btn-reset">Reiniciar</button>
+        </div>
+  
+      </div>
+  
+      <p id="credit">By Billy <a href="https://github.com/billyfranklim1" target="_blank">Github</a></p>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.1/howler.core.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js"></script>
+  <script src="script.js"></script>
+  </body>
+  </html>
