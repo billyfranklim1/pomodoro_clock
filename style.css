@@ -1,7 +1,8 @@
 html, body {
-  width: auto;
-  height: auto;
-  min-height: 100%;
+  width: 99%;
+  /* width: auto; */
+  /* height: auto; */
+  /* min-height: 100%; */
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100 */
   background: #151515 !important; 
@@ -22,7 +23,7 @@ html, body {
 }
 
 .title {
-  font-size: 70px;
+  font-size: 110px;
   /* font-family: 'Covered By Your Grace', cursive; */
     font-family: 'Roboto', sans-serif;
 
@@ -33,11 +34,13 @@ html, body {
   /* color: #d95550; */
   color: #FFFFFF;
   text-align: center;
+  /* FONT BOLD */
+  font-weight: bold;
 
 }
 
 .subtitle {
-  font-size: 30px;
+  font-size: 50px;
   /* font-family: 'Covered By Your Grace', cursive; */
     font-family: 'Roboto', sans-serif;
 
@@ -51,17 +54,28 @@ html, body {
   margin-bottom: 50px;
 }
 .timer{
-  text-align: center;
+  text-align: center !important;
+  margin-left: 15% !important;
+  margin-right: 15% !important;
 
+}
+
+.clock{
+  zoom: 1.5;
+}
+
+.action-button {
+  zoom: 1.5;
 }
 
 
 .clock-title {
   font-size: 64px;
   /* font-family: 'Covered By Your Grace', cursive; */
-    font-family: 'Roboto', sans-serif;
-
+  font-family: 'Roboto', sans-serif;
   color: #FFFFFF  !important;
+  /* FONT BOLD */
+  font-weight: bold;
 }
 
 .margin-top {

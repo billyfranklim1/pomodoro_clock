@@ -23,6 +23,10 @@
   var sessionTime = 1500;
   var breakTime = 300;
 
+
+// var sessionTime = 4;
+// var breakTime = 4;
+
   var sessionOverMusic = new Howl({
       //edit this to the music you want to play
       // src: ['music/bensound-cute.mp3'],
@@ -46,6 +50,7 @@
       countdown: true,
       autoStart: false,
 
+
       callbacks: {
           interval: function () {
               var sessionTime = sessionClock.getTime().time;
@@ -57,6 +62,10 @@
 
                   isSessionStop = true;
                   sessionWasRunning = false;
+
+                //   hide session clock
+                hideSessionTime();
+                showBreakTime();
 
                   playSessionOverMusic();
 
@@ -90,6 +99,9 @@
                   isBreakStop = true;
 
                   playBreakOverMusic();
+
+                  hideBreakTime();
+                  showSessionTime();
 
               } else if (sessionTime == 0 && isSessionStop) {
 
@@ -150,34 +162,79 @@
       }
   }
 
+  function hideBreakTime() {
+    $("#break-section").hide();
+    $("#session-section").removeClass("col-md-6");
+    $("#session-section").addClass("col-md-12");
+    // force section timer to be in the center
+    // $("#timer").css("margin-left", "0px");
+    // $("#timer").addClass("col-md-12");
+
+
+  } 
+
+  function showBreakTime() {
+    $("#break-section").show();
+    $("#session-section").removeClass("col-md-12");
+    $("#session-section").addClass("col-md-6");
+  }
+
+function hideSessionTime() {
+    $("#session-section").hide();
+    $("#break-section").removeClass("col-md-6");
+    $("#break-section").addClass("col-md-12");
+    // force section timer to be in the middle
+    $("#timer").css("margin-top", "0px");
+}
+
+function showSessionTime() {
+    $("#session-section").show();
+    $("#break-section").removeClass("col-md-12");
+    $("#break-section").addClass("col-md-6");
+}
+
+
+
   /* End Edit Time Section */
 
   startButton.click(function () {
       if (sessionWasRunning && isSessionStop) {
           sessionClock.start();
           startButton.text("Parar");
+          hideBreakTime();
+          console.log('1');
 
           isSessionStop = false;
       } else if (!sessionWasRunning && isBreakStop) {
           breakClock.start();
           startButton.text("Parar");
+          console.log('2');
+        //   hideBreakTime();
+        hideSessionTime();
+
 
           isBreakStop = false;
       }else if(!isSessionStop){
           sessionClock.stop();
           startButton.text("Começar");
 
+          showBreakTime();
+            console.log('3');
           isSessionStop = true;
           sessionWasRunning = true;
       }else if(!isBreakStop){
           breakClock.stop();
           startButton.text("Começar");
-
+          showBreakTime();
+          showSessionTime();
+        console.log('4');
           isBreakStop = true;
           sessionWasRunning = false;
       }else{
-
+        console.log("else");
       }
+
+
 
   });
 
@@ -191,6 +248,9 @@
 
       sessionClock.setTime(sessionTime);
       breakClock.setTime(breakTime);
+
+      showBreakTime();
+      showSessionTime();
   });
 
   stopMusicButton.click(function () {

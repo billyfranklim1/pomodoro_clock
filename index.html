@@ -12,34 +12,35 @@
   
   </head>
   <body id="body">
-  <div class="container text-center">
-      <div class="row margin-top">
+  <div class=" text-center">
+      <div class="row margin-top " style="margin-top: 5%;">
           <div class="col-md-12 col-xs-12">
             <h1 class="title">Pomodoro Clock</h1>
             <p class="subtitle">⏰ seu tempo de trabalho</p>
           </div>
       </div>
-      <div class="row timer">
-          <!-- <div class="col-md-5 col-md-offset-1">
+      <div id="timer" class="row timer">
+          <div id="break-section" class="col-md-6">
               <div>
                   <h1 class="clock-title">
-                    Pausa
+                    Break
                   </h1>
               </div>
-              <div class="clock break-clock"></div>
-              <div>
+              <div class="clock break-clock" style="margin-top: 25px;">
+              </div>
+              <div class="action-button">
                   <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-break-minute">-</button>
                   <button type="button" class="btn btn-lg btn-edit margin-right" id="btn-increase-break-minute">+</button>
                   <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-break-second">-</button>
                   <button type="button" class="btn btn-lg btn-edit" id="btn-increase-break-second">+</button>
               </div>
-          </div> -->
-          <div class="col-md-12">
-              <!-- <h1 class="clock-title">
-                Focado  
-              </h1> -->
-              <div class="clock session-clock"></div>
-              <div>
+          </div>
+          <div id="session-section" class="col-md-6">
+              <h1 class="clock-title">
+                Focus  
+              </h1>
+              <div class="clock session-clock" style="margin-top: 25px;"></div>
+              <div class="action-button">
                   <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-session-minute">-</button>
                   <button type="button" class="btn btn-lg btn-edit margin-right" id="btn-increase-session-minute">+</button>
                   <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-session-second">-</button>
@@ -51,7 +52,7 @@
         <div class="col-md-12">
 
           <button class="btn btn-lg btn-main" id="btn-start">Começar</button>
-          <!-- <button class="btn btn-lg btn-main" id="btn-stop-music">Stop Music</button> -->
+          <button class="btn btn-lg btn-main" id="btn-stop-music">Stop Music</button>
           <button class="btn btn-lg btn-main" id="btn-reset">Reiniciar</button>
         </div>
   
