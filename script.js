@@ -1,7 +1,3 @@
-/**
- * Created by LEE on 2016/10/19.
- */
-
  $(document).ready(function () {
   var startButton = $("#btn-start");
   var resetButton = $("#btn-reset");
@@ -200,14 +196,14 @@ function showSessionTime() {
   startButton.click(function () {
       if (sessionWasRunning && isSessionStop) {
           sessionClock.start();
-          startButton.text("Parar");
+          startButton.text("Stop");
           hideBreakTime();
           console.log('1');
 
           isSessionStop = false;
       } else if (!sessionWasRunning && isBreakStop) {
           breakClock.start();
-          startButton.text("Parar");
+          startButton.text("Stop");
           console.log('2');
         //   hideBreakTime();
         hideSessionTime();
@@ -216,7 +212,7 @@ function showSessionTime() {
           isBreakStop = false;
       }else if(!isSessionStop){
           sessionClock.stop();
-          startButton.text("Começar");
+          startButton.text("Start");
 
           showBreakTime();
             console.log('3');
@@ -224,7 +220,7 @@ function showSessionTime() {
           sessionWasRunning = true;
       }else if(!isBreakStop){
           breakClock.stop();
-          startButton.text("Começar");
+          startButton.text("Start");
           showBreakTime();
           showSessionTime();
         console.log('4');
@@ -267,7 +263,7 @@ function showSessionTime() {
       breakClock.stop();
       isBreakStop = true;
 
-      startButton.text("Começar");
+      startButton.text("Start");
   }
 
   function playSessionOverMusic() {
