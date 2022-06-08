@@ -1,0 +1,13 @@
+{
+  "name": "Pomodoro clock",
+  "short_name": "Pomodoro clock",
+  "description": "Pomodoro clock",
+  "start_url": "index.html",
+  "scope" : ".",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "dir": "ltr",
+  "lang": "en-US"
+}
