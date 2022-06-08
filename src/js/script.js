@@ -19,6 +19,18 @@
   var sessionTime = 1500;
   var breakTime = 300;
 
+  var music = true;    
+
+  stopMusicButton.click(function () {
+      music = !music;
+
+      if (music) {
+        stopMusicButton.text("Stop song");
+      }else{
+        stopMusicButton.text("Play song");
+      }
+  });
+
 
 // var sessionTime = 4;
 // var breakTime = 4;
@@ -28,7 +40,7 @@
       // src: ['/src/audio/bensound-cute.mp3'],
       src: ['/src/audio/bensound-anewbeginning.mp3'],
       onend: function () {
-          stopMusicButton.prop('disabled',true);
+        //   stopMusicButton.prop('disabled',true);
       }
   });
 
@@ -36,9 +48,17 @@
       //edit this to the music you want to play
       src: ['/src/audio/bensound-anewbeginning.mp3'],
       onend: function () {
-          stopMusicButton.disabled = true;
+        //   stopMusicButton.disabled = true;
       }
   });
+
+
+var song = new Howl({
+    src: ['/src/audio/Metronome - QuickSounds.com2.mp3'],
+    onend: function () {
+        // stopMusicButton.disabled = true;
+    }
+});
 
   var sessionClock = $('.session-clock').FlipClock(sessionTime, {
       clockFace: 'MinuteCounter',
@@ -49,7 +69,11 @@
 
       callbacks: {
           interval: function () {
-              var sessionTime = sessionClock.getTime().time;
+            var sessionTime = sessionClock.getTime().time;
+
+            if(music){
+                song.play();
+            }
               if (sessionTime == 0) {
                   //set time again to offset the one second difference
                   breakClock.setTime(breakTime + 1);
@@ -83,6 +107,10 @@
       callbacks: {
           interval: function () {
               var breakTime = breakClock.getTime().time;
+
+              if(music){
+                  song.play();
+              }
 
               if (breakTime == 0) {
 
@@ -253,7 +281,7 @@ function showSessionTime() {
       sessionOverMusic.stop();
       breakOverMusic.stop();
 
-      $(this).prop("disabled",true);
+    //   $(this).prop("disabled",true);
   });
 
   function stopAllClocks() {
