@@ -160,33 +160,33 @@
 
   function hideBreakTime() {
     $("#break-section").hide();
-    $("#session-section").removeClass("col-md-6");
-    $("#session-section").addClass("col-md-12");
+    $("#session-section").removeClass("col-lg-6 col-xl-6");
+    $("#session-section").addClass("col-xs-12 col-sm-12 col-md-12");
     // force section timer to be in the center
     // $("#timer").css("margin-left", "0px");
-    // $("#timer").addClass("col-md-12");
+    // $("#timer").addClass("col-xs-12 col-sm-12 col-md-12");
 
 
   } 
 
   function showBreakTime() {
     $("#break-section").show();
-    $("#session-section").removeClass("col-md-12");
-    $("#session-section").addClass("col-md-6");
+    $("#session-section").removeClass("col-xs-12 col-sm-12 col-md-12");
+    $("#session-section").addClass("col-lg-6 col-xl-6");
   }
 
 function hideSessionTime() {
     $("#session-section").hide();
-    $("#break-section").removeClass("col-md-6");
-    $("#break-section").addClass("col-md-12");
+    $("#break-section").removeClass("col-lg-6 col-xl-6");
+    $("#break-section").addClass("col-xs-12 col-sm-12 col-md-12");
     // force section timer to be in the middle
     $("#timer").css("margin-top", "0px");
 }
 
 function showSessionTime() {
     $("#session-section").show();
-    $("#break-section").removeClass("col-md-12");
-    $("#break-section").addClass("col-md-6");
+    $("#break-section").removeClass("col-xs-12 col-sm-12 col-md-12");
+    $("#break-section").addClass("col-lg-6 col-xl-6");
 }
 
 
