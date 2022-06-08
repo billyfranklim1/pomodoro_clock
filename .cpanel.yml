@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/billydev/repositories/pomodoro-clock/
+    - export DEPLOYPATH=/home/billydev/repositories/pomodoroclock/
     - /bin/cp -R images $DEPLOYPATH
