@@ -7,12 +7,15 @@
       <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
   
       <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+     
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css"> 
   
   </head>
   <body id="body">
-  <div class=" text-center">
+  <div class="container">
       <div class="row margin-top " style="margin-top: 5%;">
           <div class="col-md-12 col-xs-12">
             <h1 class="title">Pomodoro Clock</h1>
@@ -20,45 +23,43 @@
           </div>
       </div>
       <div id="timer" class="row timer">
-          <div id="break-section" class="col-md-6">
-              <div>
-                  <h1 class="clock-title">
-                    Break
-                  </h1>
-              </div>
+          <div id="break-section" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6  text-center ">
+              <h1 class="clock-title ">
+                Break
+              </h1>
               <div class="clock break-clock" style="margin-top: 25px;">
               </div>
               <div class="action-button">
-                  <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-break-minute">-</button>
-                  <button type="button" class="btn btn-lg btn-edit margin-right" id="btn-increase-break-minute">+</button>
-                  <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-break-second">-</button>
-                  <button type="button" class="btn btn-lg btn-edit" id="btn-increase-break-second">+</button>
+                  <button type="button" class="btn btn-lg btn-light btn-edit" id="btn-reduce-break-minute">-</button>
+                  <button type="button" class="btn btn-lg btn-light btn-edit margin-right" id="btn-increase-break-minute">+</button>
+                  <button type="button" class="btn btn-lg btn-light btn-edit" id="btn-reduce-break-second">-</button>
+                  <button type="button" class="btn btn-lg btn-light btn-edit" id="btn-increase-break-second">+</button>
               </div>
           </div>
-          <div id="session-section" class="col-md-6">
+          <div id="session-section" class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center ">
               <h1 class="clock-title">
                 Focus  
               </h1>
               <div class="clock session-clock" style="margin-top: 25px;"></div>
               <div class="action-button">
-                  <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-session-minute">-</button>
-                  <button type="button" class="btn btn-lg btn-edit margin-right" id="btn-increase-session-minute">+</button>
-                  <button type="button" class="btn btn-lg btn-edit" id="btn-reduce-session-second">-</button>
-                  <button type="button" class="btn btn-lg btn-edit" id="btn-increase-session-second">+</button>
+                  <button type="button" class="btn btn-lg btn-light btn-edit" id="btn-reduce-session-minute">-</button>
+                  <button type="button" class="btn btn-lg btn-light btn-edit margin-right" id="btn-increase-session-minute">+</button>
+                  <button type="button" class="btn btn-lg btn-light btn-edit" id="btn-reduce-session-second">-</button>
+                  <button type="button" class="btn btn-lg btn-light btn-edit" id="btn-increase-session-second">+</button>
               </div>
           </div>
       </div>
-      <div class="row margin-top">
-        <div class="col-md-12">
-
+      <div class="row text-center ">
+        <div class="col-md-12  ">
           <button class="btn btn-lg btn-main" id="btn-start">Start</button>
           <button class="btn btn-lg btn-main" id="btn-stop-music">Stop Music</button>
           <button class="btn btn-lg btn-main" id="btn-reset">Restart</button>
         </div>
   
       </div>
-  
-      <p id="credit">By Billy <a href="https://github.com/billyfranklim1" target="_blank">Github</a></p>
+      <p id="credit" class="text-center">
+        By Billy <a href="https://github.com/billyfranklim1" target="_blank">Github</a>
+      </p>
   </div>
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

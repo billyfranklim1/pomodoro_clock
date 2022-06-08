@@ -54,18 +54,18 @@ html, body {
   margin-bottom: 50px;
 }
 .timer{
-  text-align: center !important;
+  /* text-align: center !important;
   margin-left: 15% !important;
-  margin-right: 15% !important;
+  margin-right: 15% !important; */
 
 }
 
 .clock{
-  zoom: 1.5;
+  zoom: 1.97;
 }
 
 .action-button {
-  zoom: 1.5;
+  zoom: 1.97;
 }
 
 
@@ -115,37 +115,42 @@ html, body {
 .btn-edit {
   width: 64px;
   font-size: 36px;
-  color: #151515;
-  background: #DDDDDD;
+  color: #DDDDDD;
   border-style: solid;
   border-color: #DDDDDD !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+  background-color: #DDDDDD !important;
+  margin: 10px 0;
 }
 
-.margin-right {
-  margin-right: 25px;
+.btn-edit:hover {
+  background-color: #151515 !important;
+  color: #FFFFFF !important;
+}
+
+.btn-edit:focus {
+  color: white;
+  outline: none;
 }
 
 .btn-main {
   width: 225px;
   font-size: 36px;
-  color: white;
-  background: #151515;
+  color: #DDDDDD;
   border-style: solid;
-  border-color: #FFFFFF !important;
+  border-color: #DDDDDD !important;
   text-transform: uppercase;
   font-weight: 700;
   transition: all .2s ease-in-out;
-  /* font-family: 'Covered By Your Grace', cursive; */
-    font-family: 'Roboto', sans-serif;
-
+  background-color: #DDDDDD !important;
   margin: 10px 0;
 }
 
 .btn-main:hover {
-  /* color: white !important;
-  background: #db6e6a; */
-  background-color: #FFFFFF;
-  color: #151515;
+  background-color: #151515 !important;
+  color: #FFFFFF !important;
 
 }
 
@@ -153,17 +158,11 @@ html, body {
   color: white;
   outline: none;
 }
-
-.btn-edit:hover{
-  color: #fff !important;
-  background: #151515;
-
+.margin-right {
+  margin-right: 25px;
 }
 
-.btn-edit:focus{
-  color:white;
-  outline: none;
-}
+
 
 #credit{
   font-size: 20px;
